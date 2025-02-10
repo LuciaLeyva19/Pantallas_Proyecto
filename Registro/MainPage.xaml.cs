@@ -13,6 +13,11 @@
         {
          
         }
+        private async void regreso(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new correo());
+        }
+
     }
 
 }

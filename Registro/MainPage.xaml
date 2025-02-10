@@ -11,10 +11,13 @@
             <Image Source="huella22.png"
                   HeightRequest="95"
                   HorizontalOptions="Start"
-                  Margin="0,1,0,-120"/>
+                  Margin="0,1,0,-120"
+                  />
+            
             <ImageButton Source="flecha.png"
              HeightRequest="50"
-             Margin="-400,0,0,-90"/>
+             Margin="-400,0,0,-90"
+             Clicked="regreso" />
 
             <Image Source="huella1.png"
                   HeightRequest="95"
@@ -22,7 +25,7 @@
                   Margin="325,20,0,0"/>  
 
 
-            <Label Text="Welcome to"
+            <Label Text="Bienvenid@ a"
                    FontSize="22"
                    HorizontalOptions="Center"
                    TextColor="#6B4F4F"
@@ -56,7 +59,7 @@
                     
                     <HorizontalStackLayout HorizontalOptions="Center" Spacing="10" >
                         
-                        <Label Text="Reset Password"
+                        <Label Text="Restablecer contraseña"
                            FontSize="24"
                            FontAttributes="Bold"
                            HorizontalOptions="Center"
@@ -68,8 +71,9 @@
                              VerticalOptions="Center" />
                     </HorizontalStackLayout>
                     
-                    <Label Text="New password"
-                           TextColor="White"/>
+                    <Label Text="Nueva contraseña"
+                           TextColor="White"
+                           FontSize="15"/>
                     <Frame CornerRadius="20"
                            Padding="1"
                            BackgroundColor="White"
@@ -83,8 +87,9 @@
                            TextColor="#6B4F4F"
                             />
                     </Frame>
-                    <Label Text="Confirm password"
-                           TextColor="White"/>
+                    <Label Text="Confirmar contraseña"
+                           TextColor="White"
+                           FontSize="15"/>
                     <Frame CornerRadius="20"
                             Padding="1"
                             BackgroundColor="White"
@@ -97,36 +102,24 @@
                             TextColor="#6B4F4F"/>
                     </Frame>
 
-
-
-
-                    <Button Text="Next"
+                    <Button Text="Cambiar contraseña"
                             BackgroundColor="#AC8764"
                             TextColor="White"
                             CornerRadius="20"
                             HeightRequest="50" 
-                            WidthRequest="150"
-                            Margin="0,70,0,0"
+                            WidthRequest="200"
+                            Margin="0,70,0,100"
                             BorderColor="White"
                             BorderWidth="3"
                             
                             />
-                    <Label Text="Already have an account? Sign in"
-                           FontSize="14"
-                           HorizontalOptions="Center"
-                           TextColor="White"
-                           Margin="0,0,0,150">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding NavigateToSignInCommand}" />
-                        </Label.GestureRecognizers>
-                    </Label>
                 </VerticalStackLayout>
                 
             </Frame>
                     <Image Source="perro.png"
                           HeightRequest="215"
                           HorizontalOptions="Start"
-                          Margin="139,-829,0,-45"/>
+                          Margin="139,-745,0,-45"/>
 
 
             
